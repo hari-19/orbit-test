@@ -1,0 +1,23 @@
+{
+  "name": "orbit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hari-19/orbit-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hari-19/orbit-test/issues"
+  },
+  "homepage": "https://github.com/hari-19/orbit-test#readme",
+  "dependencies": {
+    "ipfs": "^0.62.0",
+    "orbit-db": "^0.28.1"
+  }
+}
