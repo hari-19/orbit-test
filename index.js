@@ -7,8 +7,14 @@ const IPFS = require('ipfs');
 const OrbitDB = require('orbit-db');
 
 async function main () {
-    const ipfsOptions = {   };    // placeholder
+    const ipfsOptions = { repo: ".ipfs/" ,
+    relay: { enabled: true, hop: { enabled: true, active: true } },
+    EXPERIMENTAL: { pubsub: true },
+    // host: "localhost",
+    // port: "5001"
+    };    // placeholder
     const ipfs = await IPFS.create(ipfsOptions);
+    // ipfs.config.set('Addresses.Swarm', ['/ip4/0.0.0.0/tcp/4002', '/ip4/127.0.0.1/tcp/4003/ws', '/dns4/enigmatic-bayou-54514.herokuapp.com/tcp/443/wss/p2p-webrtc-star/'], console.log)
     console.log('-> IPFS node connected');
     const orbitdb = await OrbitDB.createInstance(ipfs);
     console.log('-> OrbitDB instance created');

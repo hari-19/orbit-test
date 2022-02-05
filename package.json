@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hari-19/orbit-test#readme",
   "dependencies": {
+    "gun": "^0.2020.1235",
     "ipfs": "^0.62.0",
     "orbit-db": "^0.28.1"
   }
