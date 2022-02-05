@@ -8,7 +8,7 @@ console.log(relays)
 // Use the relays
 let gun = new Gun({peers: relays});
 
-gun.get('aaaa').put({name: "aaaa"});
+gun.get('aaaaa').put({name: "aaaaa"});
 
 // while()
-gun.get('bbbb').on((node) => console.log("bbbb", node));
+gun.get('bbbbb').on((node) => console.log("bbbbb", node));

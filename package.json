@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node gun2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/hari-19/orbit-test#readme",
   "dependencies": {
     "gun": "^0.2020.1235",
+    "gun-relays": "^1.0.1",
     "ipfs": "^0.62.0",
     "orbit-db": "^0.28.1"
   }
